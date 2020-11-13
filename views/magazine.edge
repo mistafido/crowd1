@@ -1,0 +1,790 @@
+@layout('layouts.api')
+
+@section('content')
+<div class="notice-wrapper">
+    <div class="container">
+    </div>
+    </div>
+    <div class="super-load-box d-none" id="super-loader" data-id="1">
+    <div class="df jcc aic">
+    <span class="load-more__item"></span>
+    <span class="load-more__item is-active"></span>
+    <span class="load-more__item"></span>
+    </div>
+    </div>
+    <div class="container"><section class="pp-tabs-content">
+    <div class="magazine">
+    <section class="magazine__banner mtg2x">
+    <div class="magazine__banner__header">
+    <h2>Crowd Magazine</h2>
+    <p>Find the latest issue of the Crowd Magazine below.</p>
+    </div>
+    </section>
+    <section class="magazine__list">
+    <div class="magazine__card isLocked">
+    <div class="magazine__card__image magazine__card__image--with-image" style="background-image: url('https://static.crowd1.com/static/assets/images/magazine/issues/crowd_1.jpg')">
+    <div class="hover" style="">
+    <p class="lockissue" data-issue="1" style="background:transparent; margin-bottom:5px; border:0; width:125px; padding:0 20px;">
+    <img data-issue="1" style="width:100px; height:30px; background: transparent; text-align:center" src="https://static.crowd1.com/static/assets/images/magazine/lock.svg" />
+    </p>
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="1">
+    Buy 10 BP
+    </a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="1">Give away</button>
+    </div>
+    </div>
+    <div class="magazine__card__data">
+    <h3>Crowd Magazine Issue 1, 2020</h3>
+    April 25, 2020 <div class="buttons">
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="1">Buy 10 BP</a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="1">Give away</button>
+    </div>
+    </div>
+    </div>
+    <div class="magazine__card isLocked">
+    <div class="magazine__card__image magazine__card__image--with-image" style="background-image: url('https://static.crowd1.com/static/assets/images/magazine/issues/crowd_2.jpg')">
+    <div class="hover" style="">
+    <p class="lockissue" data-issue="2" style="background:transparent; margin-bottom:5px; border:0; width:125px; padding:0 20px;">
+    <img data-issue="2" style="width:100px; height:30px; background: transparent; text-align:center" src="https://static.crowd1.com/static/assets/images/magazine/lock.svg" />
+    </p>
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="2">
+    Buy 10 BP
+    </a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="2">Give away</button>
+    </div>
+    </div>
+    <div class="magazine__card__data">
+    <h3>Crowd Magazine Issue 2, 2020</h3>
+    June 06, 2020 <div class="buttons">
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="2">Buy 10 BP</a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="2">Give away</button>
+    </div>
+    </div>
+    </div>
+    <div class="magazine__card isLocked">
+    <div class="magazine__card__image magazine__card__image--with-image" style="background-image: url('https://static.crowd1.com/static/assets/images/magazine/issues/crowd_3.jpg')">
+    <div class="hover" style="">
+    <p class="lockissue" data-issue="3" style="background:transparent; margin-bottom:5px; border:0; width:125px; padding:0 20px;">
+    <img data-issue="3" style="width:100px; height:30px; background: transparent; text-align:center" src="https://static.crowd1.com/static/assets/images/magazine/lock.svg" />
+    </p>
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="3">
+    Buy 10 BP
+    </a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="3">Give away</button>
+    </div>
+    </div>
+    <div class="magazine__card__data">
+    <h3>Crowd Magazine Issue 3, 2020</h3>
+    July 26, 2020 <div class="buttons">
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="3">Buy 10 BP</a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="3">Give away</button>
+    </div>
+    </div>
+    </div>
+    <div class="magazine__card isLocked">
+    <div class="magazine__card__image magazine__card__image--with-image" style="background-image: url('https://static.crowd1.com/static/assets/images/magazine/issues/crowd_4.jpg')">
+    <div class="hover" style="">
+    <p class="lockissue" data-issue="5" style="background:transparent; margin-bottom:5px; border:0; width:125px; padding:0 20px;">
+    <img data-issue="5" style="width:100px; height:30px; background: transparent; text-align:center" src="https://static.crowd1.com/static/assets/images/magazine/lock.svg" />
+    </p>
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="5">
+    Buy 10 BP
+    </a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="5">Give away</button>
+    </div>
+    </div>
+    <div class="magazine__card__data">
+    <h3>Crowd Magazine Issue 4, 2020</h3>
+    September 07, 2020 <div class="buttons">
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="5">Buy 10 BP</a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="5">Give away</button>
+    </div>
+    </div>
+    </div>
+    <div class="magazine__card isLocked">
+    <div class="magazine__card__image magazine__card__image--with-image" style="background-image: url('https://static.crowd1.com/static/assets/images/magazine/issues/crowd_5.jpg')">
+    <div class="hover" style="">
+    <p class="lockissue" data-issue="38" style="background:transparent; margin-bottom:5px; border:0; width:125px; padding:0 20px;">
+    <img data-issue="38" style="width:100px; height:30px; background: transparent; text-align:center" src="https://static.crowd1.com/static/assets/images/magazine/lock.svg" />
+    </p>
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="38">
+    Buy 10 BP
+    </a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="38">Give away</button>
+    </div>
+    </div>
+    <div class="magazine__card__data">
+    <h3>Crowd Magazine Issue 5, 2020 </h3>
+    September 18, 2020 <div class="buttons">
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="38">Buy 10 BP</a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="38">Give away</button>
+    </div>
+    </div>
+    </div>
+    <div class="magazine__card isLocked">
+    <div class="magazine__card__image magazine__card__image--with-image" style="background-image: url('https://static.crowd1.com/static/assets/images/magazine/issues/crowd_6.jpg')">
+    <div class="hover" style="">
+    <p class="lockissue" data-issue="39" style="background:transparent; margin-bottom:5px; border:0; width:125px; padding:0 20px;">
+    <img data-issue="39" style="width:100px; height:30px; background: transparent; text-align:center" src="https://static.crowd1.com/static/assets/images/magazine/lock.svg" />
+    </p>
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="39">
+    Digital free</a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="39">Give away</button>
+    </div>
+    </div>
+    <div class="magazine__card__data">
+    <h3>Crowd Magazine Issue 6, 2020</h3>
+    October 12, 2020 <div class="buttons">
+    <a href="#" style="margin-bottom:5px;  width:125px; padding:0 20px;" class="btn buyissue" data-modal="#buymagazine" data-bought="0" data-issue="39">Buy 0 BP</a>
+    <button style="margin-bottom:5px; width:125px; padding:0 20px;" class="hover__away giveawayissue" data-modal="#giveawaymagazine" data-issue="39">Give away</button>
+    </div>
+    </div>
+    </div>
+    
+    </section>
+    </div>
+    <div class="">
+    <h2 style="opacity:0.7;">Your orders</h2>
+    </div>
+    <div id="orders-grid">
+    <div class="block" style="overflow-x: auto;">
+    <table style="min-width: 300px;">
+    <thead>
+    <tr>
+    <th>
+    Name
+    </th>
+    <th>
+    Order Date
+    </th>
+    <th>
+    Order Address
+    </th>
+    <th>
+    Package Quantity
+    </th>
+    <th>
+    Price
+    </th>
+    <th>
+    Order Status
+    </th>
+    </tr>
+    </thead>
+    <tbody class="grid-body">
+    </tbody>
+    </table>
+    </div>
+    </div>
+    </section>
+    <div class="modal-wrapper" id="buymagazine">
+    <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal magazine__modal__body modal--medium">
+    <div class="modal__inner">
+    <div class="modal__body">
+    <h3 style="color:white;" class="magazine-name"></h3>
+    <div class="pp-nav__wrapper pp-nav__wrapper--init">
+    <span class="end-reached end-reached--left"></span>
+    <ul class="pp-nav js-tab-nav">
+    <li class="js-tab-nav__box is-active digital__available">
+    <a href="javascript:void(0);" data-href="#pp-tab1" data-name="digital" class="js-tab-nav__link">Digital</a>
+    </li>
+    <li class="js-tab-nav__box physical__available">
+    <a href="javascript:void(0);" data-href="#pp-tab2" data-name="physical" class="js-tab-nav__link">Printed</a>
+    </li>
+    </ul>
+    <span class="end-reached end-reached--right"></span>
+    </div>
+    <section class="pp-tabs-content">
+    <div id="pp-tab1" class="tab-content">
+    <form>
+    <div class="form-group">
+    <input type="hidden" name="magazineDigitalSelect" id="magazineDigitalSelect" class="form-control" autofocus>
+    </div>
+    <div class="form-group">
+    <span style="color:white;">Price: <span class="digital-price" style="color: white;"></span></span></span><br />
+    <span style="color:white;">Magazine Quantity: 1</span>
+    </div>
+    <div class="row-fluid text-right">
+    <a style="width: 100%" id="digitalOrderMagazinesBtn" class="btn btn-success">Order Magazines</a>
+    </div>
+    </form>
+    </div>
+    <div id="pp-tab2" class="tab-content physical__available" style="display: none;">
+    <form class="physical_available">
+    <div class="form-group">
+    <input type="hidden" name="magazineSelect" id="magazineSelect" class="form-control" autofocus>
+    </div>
+    <div class="form-group">
+    <label for="quantity" class="field-label">Package Quantity</label>
+    <select name="quantity" id="quantity" class="form-control" required>
+    <option value="3">3</option>
+    <option value="72">50 + 22 extra</option>
+    <option value="100">100</option>
+    <option value="200">200</option>
+    </select>
+    </div>
+    <div class="form-group--animate-label">
+    <label for="recipent_name">Recipent name</label><br />
+    <input type="text" name="recipent_name" id="recipent_name" class="form-control" autofocus style="color:white;" value="Tobi Adeboye">
+    </div>
+    <div class="form-group">
+    <label for="addressline1">Address Line 1</label><br />
+    <input type="text" name="addressline1" id="addressline1" class="form-control" autofocus style="color:white;" value="general okpobisiri street">
+    </div>
+    <div class="form-group">
+    <label for="postalcode">Postal Code</label><br />
+    <input type="text" name="postalcode" id="postalcode" class="form-control" autofocus style="color:white;" value="10001">
+    </div>
+    <div class="form-group">
+    <label for="city">City</label><br />
+    <input type="text" name="city" id="city" class="form-control" autofocus style="color:white;" value="lagos">
+    </div>
+    <div class="form-group">
+    <label for="countries" class="field-label">Country</label>
+    <select name="countries-select" id="countriesSelect" class="form-control" required>
+    <option value="AF"> 
+    Afghanistan </option>
+    <option value="AX"> 
+    Aland </option>
+    <option value="AL"> 
+    Albania </option>
+    <option value="DZ"> 
+    Algeria </option>
+    <option value="AD"> 
+    Andorra </option>
+    <option value="AO"> 
+    Angola </option>
+    <option value="AI"> 
+    Anguilla </option>
+    <option value="AQ"> 
+    Antarctica </option>
+    <option value="AG"> 
+    Antigua and Barbuda </option>
+    <option value="AR"> 
+    Argentina </option>
+    <option value="AM"> 
+    Armenia </option>
+    <option value="AW"> 
+    Aruba </option>
+     <option value="AU"> 
+    Australia </option>
+    <option value="AS"> 
+    American Samoa </option>
+    <option value="AT"> 
+    Austria </option>
+    <option value="AZ"> 
+    Azerbaijan </option>
+    <option value="BS"> 
+    Bahamas </option>
+    <option value="BH"> 
+    Bahrain </option>
+    <option value="BD"> 
+    Bangladesh </option>
+    <option value="BB"> 
+    Barbados </option>
+    <option value="BE"> 
+    Belgium </option>
+    <option value="BZ"> 
+    Belize </option>
+    <option value="BJ"> 
+    Benin </option>
+    <option value="BM"> 
+    Bermuda </option>
+    <option value="BT"> 
+    Bhutan </option>
+    <option value="BO"> 
+    Bolivia </option>
+    <option value="BA"> 
+    Bosnia and Herzegovina </option>
+    <option value="BW"> 
+    Botswana </option>
+    <option value="BV"> 
+    Bouvet Island </option>
+    <option value="BR"> 
+    Brazil </option>
+    <option value="IO"> 
+    British Indian Ocean Territory </option>
+    <option value="BN"> 
+    Brunei </option>
+    <option value="BG"> 
+    Bulgaria </option>
+    <option value="BF"> 
+    Burkina Faso </option>
+    <option value="BI"> 
+    Burundi </option>
+    <option value="KH"> 
+    Cambodia </option>
+    <option value="CM"> 
+    Cameroon </option>
+    <option value="CA"> 
+    Canada </option>
+    <option value="BQ"> 
+    Caribbean Netherlands </option>
+    <option value="CV"> 
+    Cape Verde </option>
+    <option value="KY"> 
+    Cayman Islands </option>
+    <option value="CF"> 
+    Central African Republic </option>
+    <option value="TD"> 
+    Chad </option>
+    <option value="CL"> 
+    Chile </option>
+    <option value="CN"> 
+    China </option>
+    <option value="CX"> 
+    Christmas Island </option>
+    <option value="CC"> 
+    Cocos (Keeling) Islands </option>
+    <option value="CO"> 
+    Colombia </option>
+    <option value="KM"> 
+    Comoros </option>
+    <option value="CG"> 
+    Congo, The republic of the </option>
+    <option value="CD"> 
+    Congo (DRC) </option>
+    <option value="CK"> 
+    Cook Islands </option>
+    <option value="CR"> 
+    Costa Rica </option>
+    <option value="CI"> 
+    Côte d'Ivoire </option>
+    <option value="HR"> 
+    Croatia </option>
+    <option value="CW"> 
+    Curacao </option>
+    <option value="CY"> 
+    Cyprus </option>
+    <option value="CZ"> 
+    Czech Republic </option>
+    <option value="DK"> 
+    Denmark </option>
+    <option value="DJ"> 
+    Djibouti </option>
+    <option value="DM"> 
+    Dominica </option>
+    <option value="DO"> 
+    Dominican Republic </option>
+    <option value="EC"> 
+    Ecuador </option>
+    <option value="EG"> 
+    Egypt </option>
+    <option value="SV"> 
+    El Salvador </option>
+    <option value="GQ"> 
+    Equatorial Guinea </option>
+    <option value="ER"> 
+     Eritrea </option>
+    <option value="EE"> 
+    Estonia </option>
+    <option value="ET"> 
+    Ethiopia </option>
+    <option value="FK"> 
+    Falkland Islands (Islas Malvinas) </option>
+    <option value="FO"> 
+    Faroe Islands </option>
+    <option value="FJ"> 
+    Fiji </option>
+    <option value="FI"> 
+    Finland </option>
+    <option value="FR"> 
+    France </option>
+    <option value="GF"> 
+    French Guiana </option>
+    <option value="PF"> 
+    French Polynesia </option>
+    <option value="TF"> 
+    French Southern and Antarctic Lands </option>
+    <option value="GA"> 
+    Gabon </option>
+    <option value="GM"> 
+    Gambia, The </option>
+    <option value="GE"> 
+    Georgia </option>
+    <option value="DE"> 
+    Germany </option>
+    <option value="GH"> 
+    Ghana </option>
+    <option value="GI"> 
+    Gibraltar </option>
+    <option value="GR"> 
+    Greece </option>
+    <option value="GL"> 
+    Greenland </option>
+    <option value="GD"> 
+    Grenada </option>
+    <option value="GP"> 
+    Guadeloupe </option>
+    <option value="GU"> 
+    Guam </option>
+    <option value="GT"> 
+    Guatemala </option>
+    <option value="GG"> 
+    Guernsey </option>
+    <option value="GN"> 
+    Guinea </option>
+    <option value="GW"> 
+    Guinea-Bissau </option>
+    <option value="GY"> 
+    Guyana </option>
+    <option value="HT"> 
+    Haiti </option>
+    <option value="HM"> 
+    Heard Island and McDonald Islands </option>
+    <option value="HN"> 
+    Honduras </option>
+    <option value="HK"> 
+    Hong Kong SAR </option>
+    <option value="HU"> 
+    Hungary </option>
+    <option value="IS"> 
+    Iceland </option>
+    <option value="ID"> 
+    Indonesia </option>
+    <option value="IE"> 
+    Ireland </option>
+    <option value="IM"> 
+    Isle of Man </option>
+    <option value="IN"> 
+    India </option>
+    <option value="IL"> 
+    Israel </option>
+    <option value="IT"> 
+    Italy </option>
+    <option value="JM"> 
+    Jamaica </option>
+    <option value="JP"> 
+    Japan </option>
+    <option value="JE"> 
+    Jersey </option>
+    <option value="JO"> 
+    Jordan </option>
+    <option value="KZ"> 
+    Kazakhstan </option>
+    <option value="KE"> 
+    Kenya </option>
+    <option value="KI"> 
+    Kiribati </option>
+    <option value="KR"> 
+    Korea (South) </option>
+    <option value="XK"> 
+    Kosovo </option>
+    <option value="KW"> 
+    Kuwait </option>
+    <option value="KG"> 
+    Kyrgyzstan </option>
+    <option value="LA"> 
+    Laos </option>
+    <option value="LV"> 
+    Latvia </option>
+    <option value="LB"> 
+    Lebanon </option>
+    <option value="LS"> 
+    Lesotho </option>
+    <option value="LR"> 
+    Liberia </option>
+    <option value="LY"> 
+    Libya </option>
+    <option value="LI"> 
+    Liechtenstein </option>
+    <option value="LT"> 
+    Lithuania </option>
+    <option value="LU"> 
+    Luxembourg </option>
+    <option value="MO"> 
+    Macao SAR </option>
+    <option value="MK"> 
+    Macedonia, North </option>
+    <option value="MG"> 
+    Madagascar </option>
+    <option value="MW"> 
+    Malawi </option>
+    <option value="MY"> 
+    Malaysia </option>
+    <option value="MV"> 
+    Maldives </option>
+    <option value="ML"> 
+    Mali </option>
+    <option value="MT"> 
+    Malta </option>
+    <option value="MH"> 
+    Marshall Islands </option>
+    <option value="MQ"> 
+    Martinique </option>
+    <option value="MR"> 
+    Mauritania </option>
+    <option value="MU"> 
+    Mauritius </option>
+    <option value="YT"> 
+    Mayotte </option>
+    <option value="MX"> 
+    Mexico </option>
+    <option value="FM"> 
+    Micronesia, federated states of </option>
+    <option value="MD"> 
+    Moldova </option>
+    <option value="MC"> 
+    Monaco </option>
+    <option value="MN"> 
+    Mongolia </option>
+    <option value="ME"> 
+    Montenegro </option>
+    <option value="MS"> 
+    Montserrat </option>
+    <option value="MA"> 
+    Morocco </option>
+    <option value="MZ"> 
+    Mozambique </option>
+    <option value="MM"> 
+    Myanmar </option>
+    <option value="NA"> 
+    Namibia </option>
+    <option value="NR"> 
+    Nauru </option>
+    <option value="NP"> 
+    Nepal </option>
+    <option value="NL"> 
+    Netherlands </option>
+    <option value="NC"> 
+    New Caledonia </option>
+    <option value="NZ"> 
+    New Zealand </option>
+    <option value="NI"> 
+    Nicaragua </option>
+    <option value="NE"> 
+    Niger </option>
+    <option value="NG" selected='selected'> 
+    Nigeria </option>
+    <option value="NU"> 
+    Niue </option>
+    <option value="NF"> 
+    Norfolk Island </option>
+    <option value="MP"> 
+    Northern Mariana Islands </option>
+    <option value="NO"> 
+    Norway </option>
+    <option value="OM"> 
+    Oman </option>
+    <option value="PK"> 
+    Pakistan </option>
+    <option value="PW"> 
+    Palau </option>
+    <option value="PS"> 
+    Palestinian Authority </option>
+    <option value="PA"> 
+    Panama </option>
+    <option value="PG"> 
+    Papua New Guinea </option>
+    <option value="PY"> 
+    Paraguay </option>
+    <option value="PE"> 
+    Peru </option>
+    <option value="PH"> 
+    Philippines </option>
+    <option value="PN"> 
+    Pitcairn Islands </option>
+    <option value="PL"> 
+    Poland </option>
+    <option value="PT"> 
+    Portugal </option>
+    <option value="PR"> 
+    Puerto Rico </option>
+    <option value="QA"> 
+    Qatar </option>
+    <option value="RE"> 
+    Reunion </option>
+     <option value="RO"> 
+    Romania </option>
+    <option value="RU"> 
+    Russia </option>
+    <option value="RW"> 
+    Rwanda </option>
+    <option value="WS"> 
+    Samoa </option>
+    <option value="SM"> 
+    San Marino </option>
+    <option value="ST"> 
+    São Tomé and Príncipe </option>
+    <option value="SA"> 
+    Saudi Arabia </option>
+    <option value="SN"> 
+    Senegal </option>
+    <option value="RS"> 
+    Serbia </option>
+    <option value="SC"> 
+    Seychelles </option>
+    <option value="SL"> 
+    Sierra Leone </option>
+    <option value="SG"> 
+    Singapore </option>
+    <option value="SK"> 
+    Slovakia </option>
+    <option value="SI"> 
+    Slovenia </option>
+    <option value="SB"> 
+    Solomon Islands </option>
+    <option value="SO"> 
+    Somalia </option>
+    <option value="ZA"> 
+    South Africa </option>
+    <option value="GS"> 
+    South Georgia, South Sandwich Islands </option>
+    <option value="ES"> 
+    Spain </option>
+    <option value="LK"> 
+    Sri Lanka </option>
+    <option value="SH"> 
+    St. Helena </option>
+    <option value="KN"> 
+    St. Kitts and Nevis </option>
+    <option value="LC"> 
+    St. Lucia </option>
+    <option value="PM"> 
+    St. Pierre and Miquelon </option>
+    <option value="VC"> 
+    St. Vincent and the Grenadines </option>
+    <option value="SD"> 
+    Sudan </option>
+    <option value="SS"> 
+    Sudan, south </option>
+    <option value="SR"> 
+    Suriname </option>
+    <option value="SJ"> 
+    Svalbard and Jan Mayen </option>
+    <option value="SZ"> 
+    Swaziland </option>
+    <option value="SE"> 
+    Sweden </option>
+    <option value="CH"> 
+    Switzerland </option>
+    <option value="SY"> 
+    Syria </option>
+    <option value="TW"> 
+    Taiwan </option>
+    <option value="TJ"> 
+    Tajikistan </option>
+    <option value="TZ"> 
+    Tanzania </option>
+    <option value="TH"> 
+    Thailand </option>
+    <option value="TP"> 
+    Timor-Leste (East Timor) </option>
+    <option value="TG"> 
+    Togo </option>
+    <option value="TK"> 
+    Tokelau </option>
+    <option value="TO"> 
+    Tonga </option>
+    <option value="TT"> 
+    Trinidad and Tobago </option>
+    <option value="TN"> 
+    Tunisia </option>
+    <option value="TR"> 
+    Turkey </option>
+    <option value="TM"> 
+    Turkmenistan </option>
+    <option value="TC"> 
+    Turks and Caicos Islands </option>
+    <option value="TV"> 
+    Tuvalu </option>
+    <option value="UG"> 
+    Uganda </option>
+    <option value="UA"> 
+    Ukraine </option>
+    <option value="AE"> 
+    United Arab Emirates </option>
+    <option value="GB"> 
+    United Kingdom </option>
+    <option value="US"> 
+    USA </option>
+    <option value="UY"> 
+    Uruguay </option>
+    <option value="UZ"> 
+    Uzbekistan </option>
+    <option value="VU"> 
+    Vanuatu </option>
+    <option value="VA"> 
+    Vatican City </option>
+    <option value="VE"> 
+    Venezuela </option>
+    <option value="VN"> 
+    Vietnam </option>
+    <option value="VG"> 
+    Virgin Islands, British </option>
+    <option value="VI"> 
+    Virgin Islands, US </option>
+    <option value="WF"> 
+    Wallis and Futuna </option>
+    <option value="YE"> 
+    Yemen </option>
+    <option value="ZM"> 
+    Zambia </option>
+    <option value="ZW"> 
+    Zimbabwe </option>
+    </select>
+    </div>
+    <input type="hidden" id="current_ewallet" name="current_ewallet" value="0.00">
+    <p class="order-magazine-price">Price: <span class="order-magazine-quantityprice-placeholder"></span></p>
+    <p class="order-magazine-price">Postage price: <span class="order-magazine-postageprice-placeholder"></span></p>
+    <p class="order-magazine-price">Total price: <b><span class="order-magazine-price-placeholder"></span></b></p>
+    <p class="order-magazine-package-quantity">Magazines Quantity: <span class="order-magazine-package-quantity-placeholder"></span></p>
+    <div id="checkouterrors" class="notice notice--error d-none">
+    </div>
+    <div class="row-fluid text-right">
+    <a id="orderMagazinesBtn" class="btn btn--full" disabled="true">Order Magazines</a>
+    </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal-wrapper" id="giveawaymagazine">
+    <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal magazine__modal__body modal--medium">
+    <div class="modal__inner">
+    <div class="modal__body">
+    <h3 style="color:white;" class="magazine-name"></h3>
+    <section class="pp-tabs-content">
+    <div id="pp-tab1" class="tab-content">
+    <form>
+    <div class="form-group">
+    <input type="hidden" name="magazineDigitalSelect" id="magazineGiveawayDigitalSelect" class="form-control" autofocus>
+    </div>
+    <div class="form-group--animate-label">
+    <label for="username">Recipent Username</label><br />
+    <input type="text" name="username" id="username" class="form-control" autofocus style="color:white;">
+    </div>
+    <div class="form-group" style="margin-top:20px;">
+    <span style="color:white;">Price: <span class="digital-price" style="color: white;"></span></span></span><br />
+    <span style="color:white;">Magazine Quantity: 1</span>
+    </div>
+    <div class="row-fluid text-right">
+    <a style="width: 100%" id="digitalGiveawayMagazinesBtn" class="btn btn-success">Giveaway Magazine</a>
+    </div>
+    </form>
+    </div>
+    </section>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal-wrapper" id="viewmagazine">
+    <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal modal--thin" style="width:800px; max-width:800px;">
+    <div class="modal__inner">
+    <div class="modal__body">
+    <div id="displaymag">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div>
+@endsection

@@ -15,7 +15,7 @@ module.exports = (req, res) => {
                 if(result) {
                     req.session.userId = user._id
                    console.log('Login Succesful')
-                   res.redirect('/user/dashboard')
+                   res.redirect('/user/buypack')
                 }
             })
         }

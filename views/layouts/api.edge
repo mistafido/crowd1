@@ -1,34 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <meta name="theme-color" content="#141322">
-<title>Crowd1 - Next Generation Marketing Network</title>
-<meta name=“description” content=“Crowd1 is the next generation online business network. We work with the largest online industries and best companies in e-commerce, travel, gaming and more.“>
+<title>Crowd1</title>
 <script src="/cdn-cgi/apps/head/wQ4UqAPus8mxxHbaBOAqY6mM3JA.js"></script><style>
-	:root {
-	--STATIC_URL_JS: https://static.crowd1.com/static/;
-	--STATIC_URL_CSS: https://static.crowd1.com/static/;
-	--STATIC_DEPLOYMENT_TIMESTAMP: 1603443290;
-	}
-	</style>
-<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/bootstrap-reboot.min.css?v=1603443290">
-<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/bootstrap-grid.css?v=1603443290">
-<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/layout/layout1new.css?v=1603443290">
-<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/pages/page_home.css?v=1603443290">
+  :root {
+  --STATIC_URL_JS: https://static.crowd1.com/static/;
+  --STATIC_URL_CSS: https://static.crowd1.com/static/;
+  --STATIC_DEPLOYMENT_TIMESTAMP: 1604062521;
+
+  }
+  </style>
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/bootstrap-reboot.min.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/bootstrap-grid.css?v=1604062521" />
+
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/plugins/slick/slick.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/plugins/tooltipster/css/tooltipster.bundle.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/plugins/lity/lity.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/plugins/odometer/themes/odometer-theme-train-station.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/plugins/chartjs/Chart.min.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/plugins/baguetteBox/baguetteBox.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/intlTelInput.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/styles.css?v=1604062521" />
+<link rel="stylesheet" href="https://static.crowd1.com/static/assets/css/pages/page_buypack.css?v=1604828433">
+
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2487519731561892');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2487519731561892&ev=PageView&noscript=1"
+/></noscript>
+
 <script type="text/javascript" src="/v1/c/c.js?727567311123134"></script>
     <script type="text/javascript">_castle('setTrackerUrl','/v1/c')</script>
   </head>
-<body>
-<header>
+<body><header>
 <div class="container">
 <div class="header__content">
 <div class="logo-wrapper">
-<a href="/" class="logo"><img src="https://static.crowd1.com/static/assets/images/logos/logo-crowd1.svg" width="157" height="21" alt="CROWD1"></a>
+<a href="/backoffice" class="logo"><img src="https://static.crowd1.com/static/assets/images/logos/logo-crowd1.svg" width="157" height="21" alt="CROWD1" /></a>
+<span style="display: none;" id="isapp">0</span>
+<span style="display: none;" id="myusername">{{ user.username }}</span>
+<span style="display: none;" id="myusernamehash">9be16de38b38ad2b470f1a46ab85ad6d</span>
+
+
 </div>
-<div class="mobile-toggler-wrapper d-md-none">
+<div class="mobile-toggler-wrapper d-xl-none">
 <a href="javascript:void(0);" class="mobile-toggler">
 <span></span>
 <span></span>
@@ -37,81 +67,181 @@
 </div>
 <nav class="navbar">
 <ul class="nav">
-
-<li><a href="/logout" class="btn">Logout</a></li>
+<li class=" has-attention"><a href="/news">News <span class="new-news-badge"></span> </a></li>
+<li class=""><a href="#">Info</a>
+<ul>
+<li><a href="/info/presentations-and-promo">Presentations & Promo</a></li>
+<li><a href="/info/business">Business</a></li>
+<li><a href="/info/c1rewards">Crowd1 Rewards</a></li>
+<li><a href="https://crowd1.com/crowd1shop" target="_blank">Merch</a></li>
+<li><a href="/info/crowd-economy">Crowd Economy</a></li>
+<li><a href="/info/about-loggedin">About us</a></li>
+<li><a href="/info/topproduction">Top Producers</a></li>
+<li><a href="/info/magazine">Crowd Magazine</a></li>
 </ul>
+</li>
+<li class="">
+<a href="/events">Events</a>
+</li>
+<li class=""><a href="#">Bonus</a>
+<ul>
+<li><a href="/bonus/bonusstart">Bonus systems guide</a></li>
+<li><a href="/bonus/streamlinebonus">Streamline bonus</a></li>
+<li><a href="/bonus/customersales-bonus">Customer Sales Bonus</a></li>
+<li><a href="/bonus/activeuserpool-bonus">Active User Pool</a></li>
+<li><a href="/bonus/binarybonus">Product Sales Bonus</a></li>
+<li><a href="/bonus/matching">Matching bonus</a></li>
+<li><a href="/bonus/residualincome">Long Term Residual Income</a></li>
+<li><a href="/bonus/fearofloss">Fear of Loss</a></li>
+<li><a href="/bonus/levels">Network Levels</a></li>
+</ul>
+</li>
+<li class=""><a href="/downline">Downline</a></li>
+<li class=""><a href="/cstore">C-Store</a></li>
+<li class="d-xl-none"><a href="#">Account</a>
+<ul>
+<li><a href="/settings">Settings</a></li>
+<li><a href="/documents">Documents</a></li>
+<li><a href="/my-qr">My Invite QR</a></li>
+<li><a href="/uploadkyc">Upload KYC</a></li>
+<li><a href="/userlog">Earnings & Payouts</a></li>
+<li><a href="/gifts">Gift Codes</a></li>
+<li><a href="/withdrawbitcoin">Withdraw Bitcoin</a></li>
+<li><a href="/transferout">Withdraw to Bank</a></li>
+<li><a href="/support">Support</a></li>
+<li><a href="/invoices">Invoices</a></li>
+</ul>
+</li>
+<li class="d-xl-none"><a href="/user/logout" class="highlight--blue logoutlink">Logout</a></li>
+</ul>
+<div class="mobile-subnav">
+<a href="javascript:void(0);" class="go-back js-submenu-back">
+<img src="https://static.crowd1.com/static/assets/images/system/submenu-arrow.svg" alt="submenu arrow" />
+</a>
+<p class="mobile-subnav__title"></p>
+<ul class="subnav-items js-subnav">
+</ul>
+</div>
 </nav>
+
+
+<div class="account-wrapper d-none d-xl-flex">
+<a href="#" class="account__link">
+<img src="https://static.crowd1.com/static/assets/images/system/account2.svg" width="38" height="34" alt="My Account" class="account__icn">
+<span class="account__label">{{ user.username }}</span>
+</a>
+<ul class="account-menu">
+<li><a href="/settings">Settings</a></li>
+<li><a href="/documents">Documents</a></li>
+<li><a href="/my-qr">My Invite QR</a></li>
+<li><a href="/uploadkyc">Upload KYC</a></li>
+<li><a href="/userlog">Earnings & Payouts</a></li>
+<li><a href="/gifts">Gift Codes</a></li>
+<li><a href="/fundaccount">Payment by Wire</a></li>
+<li><a href="/withdrawbitcoin">Withdraw Bitcoin</a></li>
+<li><a href="/transferout">Withdraw to Bank</a></li>
+<li><a href="/support">Support</a></li>
+<li><a href="/invoices">Invoices</a></li>
+<li class="highlight__hover--blue logoutlink"><a href="/user/logout">Log Out</a></li>
+</ul>
+</div>
 </div>
 </div>
 </header>
 
 @!section('content')
 
-<footer class="tac">
-<div class="container-footer">
-<div class="col-left">
-<img src="https://static.crowd1.com/static/assets/images/landing/logos/logo-c.svg" width="104" height="104" alt="Crowd1" class="crowd1-logo" />
-<h5 class="footer__title">Join Crowd1</h5>
-<p class="getStarted">Get started right away!</p>
-<a href="https://play.google.com/store/apps/details?id=com.crowed2" target="_blank" class="app-link">
-<img src="https://static.crowd1.com/static/assets/images/landing/logos/logo-google-play.svg" width="187" height="56" alt="Google Play" class="google-play-logo" />
-</a>
-</div>
-<div class="col-middle">
-<nav class="nav-footer">
-<a href="/about">About Us</a>
-<a href="/privacy">Privacy Policy</a>
-<a href="/terms">Terms & Conditions</a>
-<a href="/signup">Join Crowd1</a>
-<a href="https://www.mynewsdesk.com/com/crowd1-network-ltd" target="_blank">Press Room</a>
-<a href="https://blog.crowd1.com" target="_blank">Crowd1 Blog</a>
-<a href="/frequently-asked-questions" target="_blank">FAQ</a>
-<a href="/introduction-to-crowd-marketing">Introduction to Crowd marketing</a>
-<a href="/introduction-to-network-marketing">Introduction to network marketing</a>
-</nav>
-</div>
-<div class="col-right">
-<span id="google_translate_element"></span>
-<p class="copyright"><strong class="pt">&copy; 2020 Crowd1 Network Ltd.</strong></p>
-<div class="address">
-<p class="d-none d-md-block"><small>HDS Tower, Unit No 3408</small></p>
-<p class="d-none d-md-block"><small>Jumeirah Lakes Towers</small></p>
-<p class="d-none d-md-block"><small>P.O. Box 393243 Dubai</small></p>
-<p class="d-none d-md-block"><small>United Arabic Emirates</small></p>
-</div>
-</div>
-</div>
-</footer>
-<script src="https://static.crowd1.com/static/assets/js/jquery.3.4.1.min.js?v=1603443290"></script>
-<script src="https://static.crowd1.com/static/assets/plugins/jquery-vaildation/jquery.validate.min.js?v=1603443290"></script>
-<script src="https://static.crowd1.com/static/assets/plugins/jquery-validation/additional-methods.min.js?v=1603443290"></script>
-<script src="https://static.crowd1.com/static/assets/plugins/taconite/jquery3.taconite.js?v=1603443290"></script>
-<script src="https://static.crowd1.com/static/assets/js/layout1new.js?v=1603443290"></script>
-<script type="text/javascript" src="https://static.crowd1.com/static/assets/js/pages/page_home.js?v=1603443290"></script>
-<script type="text/javascript">
+<footer>
+  <div class="container">
+  
+  <div class="row">
+  <div class="col-sm-12 col-md-4 col-lg-3">
+  <strong class="f-heading">Language</strong>
+  <div class="form-group">
+  <div id="google_translate_element"></div>
+  </div>
+  <small>Powered by Google Translate</small>
+  
+  </div>
+  <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1">
+  <strong class="f-heading">Information</strong>
+  <ul class="f-nav">
+  <li><a href="/support"><span class="notranslate">Support</span></a></li>
+  <li><a href="/terms-loggedin"><span class="notranslate">Terms & Conditions</span></a></li>
+  <li><a href="/privacy">Privacy Policy</a></li>
+  <li><a href="https://static.crowd1.com/static/documents/Crowd1-Anti_fraud_policy.pdf" target="_new"><span class="notranslate">Anti Fraud Policy</span></a></li>
+  <li><a href="/about-loggedin">About us</a></li>
+  </ul>
+  </div>
+  <div class="col-sm-12 col-md-4 col-lg-5">
+  <strong class="f-heading"><span class="notranslate">&copy; 2020 Crowd1 Network Ltd.</span></strong>
+  <p style="margin: 0;"><span class="notranslate">HDS Tower, Unit No 3408,</span></p>
+  <p style="margin: 0;"><span class="notranslate">Jumeirah Lakes Towers</span></p>
+  <p style="margin: 0;"><span class="notranslate">P.O. Box 393243 Dubai</span></p>
+  <p style="margin: 0;"><span class="notranslate">United Arabic Emirates</span></p>
+  </div>
+  </div>
+  </div>
+  </footer>
+  <script src="https://static.crowd1.com/static/assets/js/jquery.3.4.1.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/jquery-validation/jquery.validate.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/jquery-validation/additional-methods.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/slick/slick.min.js?v=1604062521"></script>
+  
+  <script src="https://static.crowd1.com/static/assets/plugins/tooltipster/js/tooltipster.bundle.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/clipboard/clipboard.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/circle-progress/circle-progress.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/lity/lity.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/waypoints/jquery.waypoints.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/waypoints/shortcuts/inview.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/odometer/odometer.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/jquery-sticky/jquery.sticky.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/chartjs/Chart.bundle.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/chartjs/chartjs-plugin-datalabels.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/cleave/cleave.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/baguetteBox/baguetteBox.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/datatables/datatables.min.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/taconite/jquery3.taconite.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/jquery-form/jquery.form.4.2.2.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/dobpicker/dobpicker.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/js/main.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/js/crowd1_default.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/plugins/crowd1/notice.js?v=1604062521"></script>
+  <script src="https://static.crowd1.com/static/assets/js/intlTelInput.js?v=1604062521"></script>
+  <script type="text/javascript" src="https://static.crowd1.com/static/assets/js/pages/page_buypack.js?v=1604062521"></script>
+  <script type="text/javascript">
   function googleTranslateElementInit() {
     new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, gaTrack: true, gaId: 'UA-82255371-1'}, 'google_translate_element');
   }
   </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-124361627-2"></script>
-<script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124361627-2"></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
   
     gtag('config', 'UA-124361627-2');
   </script>
-
-<script type="text/javascript">
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcGt74UAAAAAFo5eOmlT2UynS4v2A0mq8PtTCeP"></script>
+  <script>
+  grecaptcha.ready(function() {
+    grecaptcha.execute('6LcGt74UAAAAAFo5eOmlT2UynS4v2A0mq8PtTCeP', {action: 'footer'}).then(function(token) {
+      //console.log(token);
+      
+    });
+  });
+  </script>
+  
+  <script type="text/javascript">
   _atrk_opts = { atrk_acct:"Sc2Pu1rcy520uW", domain:"crowd1.com",dynamic: true};
   (function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://certify-js.alexametrics.com/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
   </script>
-<noscript><img src="https://certify.alexametrics.com/atrk.gif?account=Sc2Pu1rcy520uW" style="display:none" height="1" width="1" alt="" /></noscript>
-
-<span id="STATIC_URL_JS" style="display: none;">https://static.crowd1.com/static/</span>
-<span id="STATIC_URL_CSS" style="display: none;">https://static.crowd1.com/static/</span>
-<span id="STATIC_DEPLOYMENT_TIMESTAMP" style="display: none;">1603443290</span>
-</body>
-</html>
+  <noscript><img src="https://certify.alexametrics.com/atrk.gif?account=Sc2Pu1rcy520uW" style="display:none" height="1" width="1" alt="" /></noscript>
+  
+  <span id="STATIC_URL_JS" style="display: none;">https://static.crowd1.com/static/</span>
+  <span id="STATIC_URL_CSS" style="display: none;">https://static.crowd1.com/static/</span>
+  <span id="STATIC_DEPLOYMENT_TIMESTAMP" style="display: none;">1604062521</span>
+  </body>
+  </html>

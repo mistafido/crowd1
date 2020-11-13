@@ -1,0 +1,105 @@
+@layout('layouts.api')
+
+@section('content')
+<div class="notice-wrapper">
+    <div class="container">
+    </div>
+    </div>
+    <div class="super-load-box d-none" id="super-loader" data-id="1">
+    <div class="df jcc aic">
+    <span class="load-more__item"></span>
+    <span class="load-more__item is-active"></span>
+    <span class="load-more__item"></span>
+    </div>
+    </div>
+    <div class="container"> <div class="page-header page-header--radial-bg mbg2x fdc">
+    <div class="page-header__content">
+    <h2 class="page__title tac">Matching Bonus</h2>
+    <p class="page__subline page-header__content--short tac">Benefit from your team's bonus!</p>
+    </div>
+    </div>
+    <section class="block mbg4x">
+    <div class="block__body block__body--gradient padding--horizontal2x padding--vertical2x ov">
+    <div class="row fdcr-mobile df aic jcc">
+    <div class="col-12 col-md-7 elmc">
+    <h3>This is how it works</h3>
+    <p>The Matching Bonus pays out a percentage based on your personally sponsored teams’ Binary
+    Bonus! The number of your personally sponsored members and your member package sets the
+    Matching Level.</p>
+    </div>
+    <div class="col-md-5 col-12 tac mtg mbg">
+    <img src="https://static.crowd1.com/static/assets/images/artworks/bonuses/how-it-works.svg" width="209" height="185" alt="" />
+    </div>
+    </div>
+    </div>
+    <div class="block__footer padding--horizontal2x jcfs">
+    <h4 class="margin--none bf-current-level-title">Your current matching level</h4>
+    <div class="bf-current-level-box">
+    <h2 class="bf-current-level">0</h2>
+    </div>
+    </div>
+    </section>
+    <section class="block">
+    <div class="block__body block--padding">
+    <div class="table-responsive-wrapper horizontal-scroll js-horizontal-scroll horizontal-scroll--init">
+    <span class="end-reached end-reached--left"></span>
+    <div class="table-responsive horizontal-scroll__inner bold">
+    <table class="margin--none">
+    <thead>
+    <tr>
+    <th>Matching Level</th>
+    <th>Your Package</th>
+    <th>Personally Sponsored</th>
+    <th>Matching Bonus</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class=" ">
+    <td>
+    <h3 class="margin--none">1</h3>
+    </td>
+    <td><span class=" pts pbs brs dif aic"><img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-white.svg" width="28" height="28" alt="White Package" /></span></td>
+    <td>4 personal</td>
+    <td><span class="t-badge-bright-bg">10%</span></td>
+    </tr>
+    <tr class=" ">
+    <td>
+    <h3 class="margin--none">2</h3>
+    </td>
+    <td><span class=" pts pbs brs dif aic"><img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-black.svg" width="28" height="28" alt="Black Package" /></span></td>
+    <td>8 personal</td>
+    <td><span class=" t-badge-bright-bg">10% + 10%</span></td>
+    </tr>
+    <tr class=" ">
+    <td>
+    <h3 class="margin--none">3</h3>
+    </td>
+    <td><span class=" pts pbs brs dif aic"><img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-black.svg" width="28" height="28" alt="Black Package" /></span></td>
+    <td>12 personal</td>
+    <td><span class=" t-badge-bright-bg">10% + 10% + 10%</span></td>
+    </tr>
+    <tr class=" ">
+    <td>
+    <h3 class="margin--none">4</h3>
+    </td>
+    <td><span class=" pts pbs brs dif aic"><img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-gold.svg" width="28" height="28" alt="Gold Package" /></span></td>
+    <td>16 personal</td>
+    <td><span class="t-badge-bright-bg">10% + 10% + 10% + 10%</span></td>
+    </tr>
+    <tr class=" ">
+    <td>
+    <h3 class="margin--none">5</h3>
+    </td>
+    <td><span class=" pts pbs brs dif aic"><img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-titanium.svg" width="28" height="28" alt="Titanium Package" /></span></td>
+    <td>20 personal</td>
+    <td><span class="t-badge-bright-bg">10% + 10% + 10% + 10% + 10%</span></td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <span class="end-reached end-reached--right"></span>
+    </div>
+    </div>
+    </section>
+    </div>
+@endsection

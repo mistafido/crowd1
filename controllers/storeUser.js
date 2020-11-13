@@ -24,9 +24,9 @@ module.exports = (req, res) => {
         })
 
         user.save().then(user => {
-            console.log('user added successfully')
+            console.log('User added successfully')
+            res.redirect('/login')
         }).catch(error => {
-
             const registrationErrors = Object.keys(error.errors).map(key => error.errors[key].message)
             req.flash('registrationErrors', registrationErrors)
             req.flash('data', req.body)

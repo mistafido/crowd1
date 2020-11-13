@@ -1,0 +1,254 @@
+@layout('layouts.api')
+
+@section('content')
+<div class="notice-wrapper">
+    <div class="container">
+    </div>
+    </div>
+    <div class="super-load-box d-none" id="super-loader" data-id="1">
+    <div class="df jcc aic">
+    <span class="load-more__item"></span>
+    <span class="load-more__item is-active"></span>
+    <span class="load-more__item"></span>
+    </div>
+    </div>
+    <div class="container"> <div class="page-header">
+    <div class="page-header__content tac">
+    <h1 class="tac mtg-mobile">Top Production</h1>
+    <p class="page__subline page-header__content--short tac">Leaderboards of top producers weekly & monthly</p>
+    </div>
+    </div>
+    <div id="summaryview">
+    <div class="df jcc">
+    <div class="pp-nav__wrapper pp-nav__wrapper--tabs tp-tabs-inner">
+    <ul class="pp-nav pp-nav--tabs js-tab-nav">
+    <li class="js-tab-nav__box is-active">
+    <a href="javascript:void(0);" data-href="#pp-tab1" class="js-tab-nav__link">Weekly</a>
+    </li>
+    <li class="js-tab-nav__box">
+    <a href="javascript:void(0);" data-href="#pp-tab2" class="js-tab-nav__link">Monthly</a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    <section class="pp-tabs-content">
+    <div id="pp-tab1" class="tab-content top-production-tabs" style="display: block;">
+    <div class="df jcc">
+    <div class="form-container pb tp-tabs-inner">
+    <div class="form-group">
+    <select id="weekchooser" class="form-control form-control--big regular js-kyc_id_photo_toggler">
+    <option value="2020-11-02">2020-11-02 until 2020-11-08</option><option value="2020-10-26">2020-10-26 until 2020-11-01</option><option value="2020-10-19">2020-10-19 until 2020-10-25</option><option value="2020-10-12">2020-10-12 until 2020-10-18</option><option value="2020-10-05">2020-10-05 until 2020-10-11</option><option value="2020-09-28">2020-09-28 until 2020-10-04</option><option value="2020-09-21">2020-09-21 until 2020-09-27</option><option value="2020-09-14">2020-09-14 until 2020-09-20</option><option value="2020-09-07">2020-09-07 until 2020-09-13</option><option value="2020-08-31">2020-08-31 until 2020-09-06</option><option value="2020-08-24">2020-08-24 until 2020-08-30</option><option value="2020-08-17">2020-08-17 until 2020-08-23</option><option value="2020-08-10">2020-08-10 until 2020-08-16</option><option value="2020-08-03">2020-08-03 until 2020-08-09</option><option value="2020-07-27">2020-07-27 until 2020-08-02</option><option value="2020-07-20">2020-07-20 until 2020-07-26</option><option value="2020-07-13">2020-07-13 until 2020-07-19</option><option value="2020-07-06">2020-07-06 until 2020-07-12</option><option value="2020-06-29">2020-06-29 until 2020-07-05</option><option value="2020-06-22">2020-06-22 until 2020-06-28</option><option value="2020-06-15">2020-06-15 until 2020-06-21</option><option value="2020-06-08">2020-06-08 until 2020-06-14</option><option value="2020-06-01">2020-06-01 until 2020-06-07</option><option value="2020-05-25">2020-05-25 until 2020-05-31</option><option value="2020-05-18">2020-05-18 until 2020-05-24</option><option value="2020-05-11">2020-05-11 until 2020-05-17</option><option value="2020-05-04">2020-05-04 until 2020-05-10</option><option value="2020-04-27">2020-04-27 until 2020-05-03</option><option value="2020-04-20">2020-04-20 until 2020-04-26</option><option value="2020-04-13">2020-04-13 until 2020-04-19</option><option value="2020-04-06">2020-04-06 until 2020-04-12</option><option value="2020-03-30">2020-03-30 until 2020-04-05</option><option value="2020-03-23">2020-03-23 until 2020-03-29</option><option value="2020-03-16">2020-03-16 until 2020-03-22</option><option value="2020-03-09">2020-03-09 until 2020-03-15</option><option value="2020-03-02">2020-03-02 until 2020-03-08</option>
+    </select>
+    </div>
+    </div>
+    </div>
+    <div class="top-production-launcher mtg4x">
+    <div class="top-production-3"><img src="https://static.crowd1.com/static/assets/images/icons-badges/levels/badge-level-m.svg" alt="" class="top-producer-cat">
+    <h3 class="margin--none">Managers</h3>
+    <div class="top-producers-see-all tac"><a href="#" class="btn margin--none viewfull" data-type="week" data-levels="7-9">View top 100</a></div>
+    <div class="top-production-3-staples">
+    <div class="staple second-place">
+    <div class="top3-item-focus"><img src="" id="weektop7-9_2_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop7-9_2">loading...</div>
+    </div>
+    <div class="top-producers-3-staple-placement _2">
+    <div class="text-block">2</div>
+    </div>
+    </div>
+    <div class="staple">
+    <div class="top-producers-3-staple-placement">
+    <div class="text-block">1</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="weektop7-9_1_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop7-9_1">loading...</div>
+    </div>
+    </div>
+    <div class="staple third-place">
+    <div class="top-producers-3-staple-placement _3">
+    <div class="text-block">3</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="weektop7-9_3_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop7-9_3">loading...</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="top-production-3"><img src="https://static.crowd1.com/static/assets/images/icons-badges/levels/badge-level-d.svg" alt="" class="top-producer-cat">
+    <h3 class="margin--none">Directors</h3>
+    <div class="top-producers-see-all tac"><a href="#" class="btn margin--none viewfull" data-type="week" data-levels="10-12">View top 100</a></div>
+    <div class="top-production-3-staples">
+    <div class="staple second-place">
+    <div class="top3-item-focus"><img src="" id="weektop10-12_2_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop10-12_2">loading...</div>
+    </div>
+    <div class="top-producers-3-staple-placement _2">
+    <div class="text-block">2</div>
+    </div>
+    </div>
+    <div class="staple">
+    <div class="top-producers-3-staple-placement">
+    <div class="text-block">1</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="weektop10-12_1_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop10-12_1">loading...</div>
+    </div>
+    </div>
+    <div class="staple third-place">
+    <div class="top-producers-3-staple-placement _3">
+    <div class="text-block">3</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="weektop10-12_3_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop10-12_3">loading...</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="top-production-3"><img src="https://static.crowd1.com/static/assets/images/icons-badges/levels/badge-level-p-sp.svg" alt="" class="top-producer-cat" style="width: 200px">
+    <h3 class="margin--none">Presidents & Sr. Presidents</h3>
+    <div class="top-producers-see-all tac"><a href="#" class="btn margin--none viewfull" data-type="week" data-levels="13-18">View top 100</a></div>
+    <div class="top-production-3-staples">
+    <div class="staple second-place">
+    <div class="top3-item-focus"><img src="" id="weektop13-18_2_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop13-18_2">loading...</div>
+    </div>
+    <div class="top-producers-3-staple-placement _2">
+    <div class="text-block">2</div>
+    </div>
+    </div>
+    <div class="staple">
+    <div class="top-producers-3-staple-placement">
+    <div class="text-block">1</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="weektop13-18_1_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop13-18_1">loading...</div>
+    </div>
+    </div>
+    <div class="staple third-place">
+    <div class="top-producers-3-staple-placement _3">
+    <div class="text-block">3</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="weektop13-18_3_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="weektop13-18_3">loading...</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="pp-tab2" class="tab-content" style="display: none;">
+    <div class="df jcc">
+    <div class="form-container pb tp-tabs-inner">
+    <div class="form-group">
+    <select id="monthchooser" class="form-control form-control--big regular js-kyc_id_photo_toggler">
+    <option value="2020-10">October 2020</option><option value="2020-09">September 2020</option><option value="2020-08">August 2020</option><option value="2020-07">July 2020</option><option value="2020-06">June 2020</option><option value="2020-05">May 2020</option><option value="2020-04">April 2020</option><option value="2020-03">March 2020</option></select>
+    </div>
+    </div>
+    </div>
+    <div class="top-production-launcher mtg4x">
+    <div class="top-production-3"><img src="https://static.crowd1.com/static/assets/images/icons-badges/levels/badge-level-m.svg" alt="" class="top-producer-cat">
+    <h3 class="margin--none">Managers</h3>
+    <div class="top-producers-see-all tac"><a href="#" class="btn margin--none viewfull" data-type="month" data-levels="7-9">View top 100</a></div>
+    <div class="top-production-3-staples">
+    <div class="staple second-place">
+    <div class="top3-item-focus"><img src="" id="monthtop7-9_2_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop7-9_2">loading...</div>
+    </div>
+    <div class="top-producers-3-staple-placement _2">
+    <div class="text-block">2</div>
+    </div>
+    </div>
+    <div class="staple">
+    <div class="top-producers-3-staple-placement">
+    <div class="text-block">1</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="monthtop7-9_1_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop7-9_1">loading...</div>
+    </div>
+    </div>
+    <div class="staple third-place">
+    <div class="top-producers-3-staple-placement _3">
+    <div class="text-block">3</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="monthtop7-9_3_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop7-9_3">loading...</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="top-production-3"><img src="https://static.crowd1.com/static/assets/images/icons-badges/levels/badge-level-d.svg" alt="" class="top-producer-cat">
+    <h3 class="margin--none">Directors</h3>
+    <div class="top-producers-see-all tac"><a href="#" class="btn margin--none viewfull" data-type="month" data-levels="10-12">View top 100</a></div>
+    <div class="top-production-3-staples">
+    <div class="staple second-place">
+    <div class="top3-item-focus"><img src="" id="monthtop10-12_2_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop10-12_2">loading...</div>
+    </div>
+    <div class="top-producers-3-staple-placement _2">
+    <div class="text-block">2</div>
+    </div>
+    </div>
+    <div class="staple">
+    <div class="top-producers-3-staple-placement">
+    <div class="text-block">1</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="monthtop10-12_1_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop10-12_1">loading...</div>
+    </div>
+    </div>
+    <div class="staple third-place">
+    <div class="top-producers-3-staple-placement _3">
+    <div class="text-block">3</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="monthtop10-12_3_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop10-12_3">loading...</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="top-production-3"><img src="https://static.crowd1.com/static/assets/images/icons-badges/levels/badge-level-p-sp.svg" alt="" class="top-producer-cat" style="width: 200px">
+    <h3 class="margin--none tac">Presidents & Sr. Presidents</h3>
+    <div class="top-producers-see-all tac"><a href="#" class="btn margin--none viewfull" data-type="month" data-levels="13-18">View top 100</a></div>
+    <div class="top-production-3-staples">
+    <div class="staple second-place">
+    <div class="top3-item-focus"><img src="" id="monthtop13-18_2_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop13-18_2">loading...</div>
+    </div>
+    <div class="top-producers-3-staple-placement _2">
+    <div class="text-block">2</div>
+    </div>
+    </div>
+    <div class="staple">
+    <div class="top-producers-3-staple-placement">
+    <div class="text-block">1</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="monthtop13-18_1_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop13-18_1">loading...</div>
+    </div>
+    </div>
+    <div class="staple third-place">
+    <div class="top-producers-3-staple-placement _3">
+    <div class="text-block">3</div>
+    </div>
+    <div class="top3-item-focus"><img src="" id="monthtop13-18_3_flag" alt="" class="tp-flag">
+    <div class="top-production-username" id="monthtop13-18_3">loading...</div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <div id="fullview" class="d-none">
+    <a href="#" class="back-link pb2x"><img src="https://static.crowd1.com/static/assets/images/system/back-arrow-prod.svg" alt="" class="back-arrow"><div>Back</div></a>
+    <div class="top-production-25-list-head"><img src="https://static.crowd1.com/static/assets/images/icons-badges/levels/badge-level-d.svg" alt="" class="top-producer-cat list-head" id="fullbadge">
+    <div>
+    <h3 class="margin--none" id="fulltitle">...</h3>
+    <div class="text-block-3 margin--none">Top <span id="fullsubtitle">...</span> with largest production during <span id="fullmonthyearweek">...</span></div>
+    </div>
+    </div>
+    <div id="fulllist"></div>
+    </div>
+    </div>
+    </div>
+@endsection

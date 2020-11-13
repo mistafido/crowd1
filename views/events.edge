@@ -1,0 +1,326 @@
+@layout('layouts.api')
+
+@section('content')
+<div class="notice-wrapper">
+    <div class="container">
+    </div>
+    </div>
+    <div class="super-load-box d-none" id="super-loader" data-id="1">
+    <div class="df jcc aic">
+    <span class="load-more__item"></span>
+    <span class="load-more__item is-active"></span>
+    <span class="load-more__item"></span>
+    </div>
+    </div>
+    <div class="container"><span id="getevent" class="d-none"></span>
+    <div class="block load-more-box padding--vertical" data-id="1">
+    <div class="df jcc aic">
+    <span class="load-more__item"></span>
+    <span class="load-more__item is-active"></span>
+    <span class="load-more__item"></span>
+    </div>
+    </div>
+    <div id="eventContainer" class="d-none bottom-gradient mbg">
+    <div class="mbg2x mtg">
+    <a href="#" class="back-link">
+    <img src="https://static.crowd1.com/static/assets/images/system/arr-white-left.svg" width="6" height="11" alt="" class="back-link__icn" />
+    <span class="back-link__title" id="event_close">Back to events</span>
+    </a>
+    </div>
+    <div class="eventid">
+    <figure class="eventid__figure">
+    <img src="" width="1025" height="290" alt="" class="eventid__featured-img" id="eventimage" />
+    </figure>
+    <div class="row eventid__content">
+    <div class="col-12 col-lg-7">
+    <h2 id="eventtitle"></h2>
+    <span class="ph-badge bold mbg2x" id="soldoutinfo"></span>
+    <div id="eventContainerInfo"></div>
+    </div>
+    <div class="col-12 col-sm-8 offset-sm-2 offset-lg-1 col-lg-4" id="buyticketContainer">
+    <div class="block">
+    <div class="eventid__form">
+    <form id="">
+    <div class="block__body block--padding">
+    <h3 class="tac" id="ticketsbuyheader"></h3>
+    <div class="row d-none ticketselection">
+    <div class="col-md-12">
+    <label for="ticketsfor">Tickets</label>
+    <select name="ticketselected" class="form-control" id="ticket">
+    </select>
+    </div>
+    </div>
+    <div class="row d-none ticketselection">
+    <div class="col-md-12">
+    <label for="eventtotalpricespan">Price</label>
+    <input class="form-control" type="text" id="eventtotalpricespan" placeholder="" name="eventtotalpricespan" readonly>
+    </div>
+    </div>
+    <div class="row ticket-free-row d-none">
+    <div class="col-md-12">
+    <br>
+    <label>This is a free event. You are only able to register yourself.</label>
+    </div>
+    </div>
+    
+    </div>
+    <input type="hidden" min="1" step="1" name="eventprice" class="form-control" id="eventprice" value="0" />
+    <input type="hidden" min="1" step="1" name="totaleventprice" class="form-control" id="totaleventprice" value="0" />
+    <input type="hidden" name="eventeid" id="eventeid" value="0" />
+    <div class="block__footer">
+    <button type="button" class="btn btn--wider js-event-ticket-submit" data-modal="#event_ticket">Proceed</button>
+    
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row eventid__toolbar" id="eventlocationformatted">
+    <div class="eventlocation col-12 col-lg-6 eventid__toolbar-item tac df aic jcc fdc">
+    <h3 id="eventvenue"></h3>
+    <span id="eventlocation" class="ph-badge bold"></span>
+    </div>
+    <div class="col-12 col-lg-6 eventid__toolbar-item tac df aic jcc fdc">
+    <h3 class="margin--none" id="eventdate"></h3>
+    </div>
+    </div>
+    </div>
+    
+    <div class="page-header ticket-section">
+    <div class="page-header__content">
+    <h2 class="page__title tac">My Tickets</h2>
+    </div>
+    </div>
+    <div class="block load-more-box padding--vertical" data-id="3">
+    <div class="df jcc aic">
+    <span class="load-more__item"></span>
+    <span class="load-more__item is-active"></span>
+    <span class="load-more__item"></span>
+    </div>
+    </div>
+    <div class="row row--tickets bottom-gradient mbg3x ticket-section">
+    <div class="col--tickets d-none" id="myticketsContainer">
+    <p class="tickets-wrapper__title tac highlight--blue"><strong>Your Tickets</strong></p>
+    <div class="tickets-wrapper" id="myticketstable">
+    </div>
+    </div>
+    <div class="col--tickets d-none" id="unsentticketsContainer">
+    <p class="tickets-wrapper__title tac highlight--blue"><strong>Unsent Tickets</strong></p>
+    <div class="tickets-wrapper" id="unsentticketstablebody">
+    </div>
+    </div>
+    <div class="col--tickets d-none" id="sentticketsContainer">
+    <p class="tickets-wrapper__title tac highlight--blue"><strong>Sent Tickets</strong></p>
+    <div class="tickets-wrapper" id="sentticketstablebody">
+    </div>
+    </div>
+    </div>
+    
+    
+    <hr class="upcoming-events-divider margin--none-bottom mtg4x d-md-none">
+    <div class="page-header">
+    <div class="page-header__content">
+    <h2 class="page__title margin--none-bottom tac">Upcoming Events</h2>
+    </div>
+    </div>
+    <div class="block load-more-box padding--vertical" data-id="2">
+    <div class="df jcc aic">
+    <span class="load-more__item"></span>
+    <span class="load-more__item is-active"></span>
+    <span class="load-more__item"></span>
+    </div>
+    </div>
+    
+    <div class="upcoming-events upcoming-events-start mbg2x">
+    <a href="javascript:void(0);" class="upcoming-events__nav upcoming-events__nav--left">
+    <img src="https://static.crowd1.com/static/assets/images/system/arr-white-right.svg" width="27" height="49" alt="" />
+    </a>
+    <div class="upcoming-events__inner" id="eventList"></div>
+    <a href="javascript:void(0);" class="upcoming-events__nav upcoming-events__nav--right">
+    <img src="https://static.crowd1.com/static/assets/images/system/arr-white-right.svg" width="27" height="49" alt="" />
+    </a>
+    </div>
+    <div class="page-header">
+    <div class="page-header__content">
+    <h2 class="page__title tac acc">Watch Past Events</h2>
+    </div>
+    </div>
+    <div class="block margin--center tac mbg4x pb2x" style="max-width: 600px;">
+    <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/f0Y9WNq4ZJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+    <h4 class="pt padding--horizontal">Power of Easy Event September</h4>
+    <span class="highlight--plum-opacity padding--horizontal">WAS STREAMED SEPTEMBER 12, 2020</span>
+    </div>
+    <div class="block margin--center tac mbg4x pb2x" style="max-width: 600px;">
+    <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/UuFXtFhjWUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+    <h4 class="pt padding--horizontal">Online Recognition Event August</h4>
+    <span class="highlight--plum-opacity padding--horizontal">WAS STREAMED AUGUST 8, 2020</span>
+    </div>
+    <div class="block margin--center tac mbg4x pb2x" style="max-width: 600px;">
+    <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/nQPFaYkZNjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+    <h4 class="pt padding--horizontal">Online World Event July</h4>
+    <span class="highlight--plum-opacity padding--horizontal">WAS STREAMED JULY 4, 2020</span>
+    </div>
+    <div class="block margin--center tac mbg4x pb2x" style="max-width: 600px;">
+    <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/U7V1G9sSCJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+    <h4 class="pt padding--horizontal">World Recognition Event June 2020</h4>
+    <span class="highlight--plum-opacity padding--horizontal">WAS STREAMED JUNE 6, 2020</span>
+    </div>
+    <div class="block margin--center tac mbg4x pb2x" style="max-width: 600px;">
+    <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/HSK_BQLJVdw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+            </iframe>
+    <h4 class="pt padding--horizontal">Online World Event April</h4>
+    <span class="highlight--plum-opacity padding--horizontal">WAS STREAMED APRIL 25, 2020</span>
+    </div>
+    
+    </div>
+    
+    
+    <div class="modal-wrapper" id="send_ticket">
+    <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal modal--thin">
+    <div class="modal__inner">
+    <div class="modal__body">
+    <div class="form-modal-wrapper">
+    <h3 class="tac margin--none js-event-send-ticket-title"></h3>
+    <p class="tac highlight--blue bold mbg2x">SEND TICKET TO</p>
+    <form action="#" method="post" class="mbg" id="send_ticket_to_username">
+    <div class="form-group mbg2x">
+    <label for="crowd1_username">Crowd1 Username</label>
+    <input type="hidden" name="event_id_send" id="event_id_send">
+    <input type="hidden" name="event_ticket_id_send" id="event_ticket_id_send">
+    <input type="hidden" name="event_ticket_code_send" id="event_ticket_code_send">
+    <input type="text" id="send_to_crowd1_username" placeholder="Username" class="form-control form-control--white" name="username">
+    </div>
+    <div class="form-group tac">
+    <button type="submit" class="btn">Send</button>
+    </div>
+    </form>
+    </div>
+    <div class="form-modal-success tac" id="sent_ticket" style="display: none;">
+    <svg id="successAnimation" xmlns="http://www.w3.org/2000/svg" class="mbg2x svg-success" width="111" height="111" viewBox="0 0 111 111">
+    <g filter="url(#filter0_d)">
+    <path id="successAnimationCircle" d="M55.5 10C30.371 10 10 30.371 10 55.5C10 80.629 30.371 101 55.5 101C80.629 101 101 80.629 101 55.5C101 30.371 80.629 10 55.5 10ZM55.5 95.129C33.729 95.129 15.871 77.506 15.871 55.5C15.871 33.7292 33.494 15.871 55.5 15.871C77.271 15.871 95.129 33.494 95.129 55.5C95.129 77.2708 77.506 95.129 55.5 95.129ZM81.4845 44.6826L48.3723 77.5292C47.5091 78.3854 46.1151 78.3799 45.2588 77.5167L29.503 61.6335C28.6467 60.7703 28.6522 59.3763 29.5155 58.5201L31.0786 56.9696C31.9418 56.1133 33.3358 56.1188 34.1921 56.9821L46.8469 69.7391L76.8331 39.9935C77.6963 39.1372 79.0903 39.1427 79.9465 40.006L81.497 41.5691C82.3534 42.4323 82.3478 43.8263 81.4845 44.6826Z" fill="#535EFB" />
+    </g>
+    <defs>
+    <filter id="filter0_d" x="0" y="0" width="111" height="111" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+    <feOffset />
+    <feGaussianBlur stdDeviation="5" />
+    <feColorMatrix type="matrix" values="0 0 0 0 0.32549 0 0 0 0 0.368627 0 0 0 0 0.984314 0 0 0 0.4 0" />
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+    </filter>
+    </defs>
+    </svg>
+    <p><strong class="ttu">ticket SENT TO <span id="sent-ticket-username"></span></strong>
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal-wrapper" id="event_ticket">
+    <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal modal--thin">
+    <div class="modal__inner">
+    <div class="modal__body">
+    <form action="#" method="post" id="buyticketsform">
+    <h3 class="tac margin--none js-checkout-title"></h3>
+    <h2 class="tac js-checkout-price"></h2>
+    <h4 class="tac js-checkout-tickets"></h4>
+    <hr>
+    <div class="notice notice--small d-none js-checkout-warning">
+    Not enough funds on account
+    </div>
+    <input type="hidden" name="event_id" class="event_id" value="0">
+    <input type="hidden" name="total_price" class="total_price">
+    <input type="hidden" name="total_tickets" class="total_tickets">
+    <input type="hidden" name="event_price" class="event_price">
+    <div class="mbg2x d-none" id="options-row">
+    <div class="col-md-12">
+    <br>
+    <label>Seating</label>
+    <select name="optionselected" class="form-control-alt form-control" id="optionselected">
+    </select>
+    </div>
+    </div>
+    <div class="mbg2x paymentoptions d-none">
+    <div class="radio-wrapper">
+    <input type="radio" name="payment_method" id="euro" value="euro" class="custom-radio" checked>
+    <label class="radio-label" for="euro">
+    <strong class="label-content">
+    <span class="label-content__text label-content__text--small">Pay with
+    Account</span><span id="accountbalance" class="accountbalance">0</span> BP
+    </strong>
+    </label>
+    </div>
+    <div class="radio-wrapper">
+    <input type="radio" name="payment_method" id="bitcoin" value="bitcoin" class="custom-radio">
+    <label class="radio-label" for="bitcoin">
+    <strong class="label-content">
+    <span class="label-content__text label-content__text--small">Pay with
+    Bitcoin</span>
+    </strong>
+    </label>
+    </div>
+    
+    <hr>
+    </div>
+    <div class="tac">
+    <button type="submit" class="btn d-none" id="eventpaybutton" name="eventpaybutton">Buy now</button>
+    <button type="submit" class="btn d-none" id="eventfreepaybutton" name="eventfreepaybutton">Register</button>
+    </div>
+    </form>
+    <div class="form-modal-success tac" id="bougth_ticket" style="display: none;">
+    <p><strong class="ttu">Thank you!</strong>
+    You can now find your ticket(s) if you close this window
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal-wrapper" id="unsend_ticket">
+    <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal modal--thin">
+    <div class="modal__inner">
+    <div class="modal__body">
+    <div class="form-modal-wrapper tac">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/icons/icn-exclamation-mark.svg" width="66" height="66" alt="Exclamation Mark" class="mbg" />
+    <p class="padding--horizontal"><strong>Are you sure you want to unsend the ticket to <span class="highlight--blue js-event-unsend-ticket-username"></span>? </strong></p>
+    <form action="#" method="post" class="mbg" id="unsend_ticket_to_username">
+    <input type="hidden" name="unsend_ticket_event_id" id="unsend_ticket_event_id" class="unsend_ticket_event_id">
+    <input type="hidden" name="unsend_ticket_user_id" id="unsend_ticket_user_id" class="unsend_ticket_user_id">
+    <input type="hidden" name="unsend_ticket_event_ticketid" id="unsend_ticket_event_ticketid" class="unsend_ticket_event_ticketid">
+    <div class="form-group">
+    <div class="row">
+    <div class="col-6">
+    <button type="submit" class="btn db" id="delsentto">Yes</button>
+    </div>
+    <div class="col-6">
+    <button type="button" class="btn btn--plum db js-trigger-modal-close">No</button>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <input type="hidden" id="ewallet" value="0">
+    </div>
+@endsection

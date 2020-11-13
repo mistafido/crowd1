@@ -1,0 +1,408 @@
+@layout('layouts.api')
+
+@section('content')
+<div class="notice-wrapper">
+    <div class="container">
+    </div>
+    </div>
+    <div class="super-load-box d-none" id="super-loader" data-id="1">
+    <div class="df jcc aic">
+    <span class="load-more__item"></span>
+    <span class="load-more__item is-active"></span>
+    <span class="load-more__item"></span>
+    </div>
+    </div>
+    <div class="container">
+    <div class="page-header page-header--radial-bg fdc mbg2x" id="generic_price_header">
+    <div class="page-header__content">
+    <h2 class="page__title tac margin--none pt2x">Choose Package</h2>
+    </div>
+    </div>
+    
+    <div class="" id="generic_price_table">
+    
+    <div class="row buypack-wrapper">
+    <div class="col-12 col-lg-4 col-md-6 col-sm-8 buypack">
+    <section class="block mbg4x">
+    <div class="block__body tac">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-1.svg" width="104" height="104" alt="" class="buypack-badge" />
+    <h3 class="mbgs">White</h3>
+    <p class="fs">€99</p>
+    <ul class="tal ul--buypack">
+    <li> Education package from mygrithub.com <strong>Value €99</strong></li>
+    <li>Crowd1 Rewards <strong>50 pc</strong> </li>
+    <li> Streamline up to <strong>level 4</strong></li>
+    <li> Matching bonus up to <strong>level 1</strong></li>
+    </ul>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpackage" data-buypack-id="1" data-upgradeto-id="1" data-buypack-title="White" data-buypack-price="99.00" data-buypack-price-pretty="€99" data-buypack-badge="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-1.svg">Select</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-12 col-lg-4 col-md-6 col-sm-8 buypack">
+    <section class="block mbg4x">
+    <div class="block__body tac">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-2.svg" width="104" height="104" alt="" class="buypack-badge" />
+    <h3 class="mbgs">Black</h3>
+    <p class="fs">€299</p>
+    <ul class="tal ul--buypack">
+    <li> Education package from mygrithub.com <strong>Value €299</strong></li>
+    <li>Crowd1 Rewards <strong>150 pc</strong> </li>
+    <li> Streamline up to <strong>level 8</strong></li>
+    <li> Matching bonus up to <strong>level 3</strong></li>
+    </ul>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpackage" data-buypack-id="2" data-upgradeto-id="2" data-buypack-title="Black" data-buypack-price="299.00" data-buypack-price-pretty="€299" data-buypack-badge="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-2.svg">Select</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-12 col-lg-4 col-md-6 col-sm-8 buypack">
+    <section class="block mbg4x">
+    <div class="block__body tac">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-3.svg" width="104" height="104" alt="" class="buypack-badge" />
+    <h3 class="mbgs">Gold</h3>
+    <p class="fs">€799</p>
+    <ul class="tal ul--buypack">
+    <li> Education package from mygrithub.com <strong>Value €799</strong></li>
+    <li>Crowd1 Rewards <strong>500 pc</strong> </li>
+    <li> Streamline up to <strong>level 12</strong></li>
+    <li> Matching bonus up to <strong>level 4</strong></li>
+    </ul>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpackage" data-buypack-id="3" data-upgradeto-id="3" data-buypack-title="Gold" data-buypack-price="799.00" data-buypack-price-pretty="€799" data-buypack-badge="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-3.svg">Select</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-12 col-lg-4 col-md-6 col-sm-8 buypack">
+    <section class="block mbg4x">
+    <div class="block__body tac">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-4.svg" width="104" height="104" alt="" class="buypack-badge" />
+    <h3 class="mbgs">Titanium</h3>
+    <p class="fs">€2,499</p>
+    <ul class="tal ul--buypack">
+    <li> Education package from mygrithub.com <strong>Value €2,499</strong></li>
+    <li>Crowd1 Rewards <strong>1750 pc</strong> </li>
+    <li> Streamline up to <strong>level 20</strong></li>
+    <li> Matching bonus up to <strong>level 5</strong></li>
+    </ul>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpackage" data-buypack-id="4" data-upgradeto-id="4" data-buypack-title="Titanium" data-buypack-price="2499.00" data-buypack-price-pretty="€2,499" data-buypack-badge="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-4.svg">Select</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-12 col-lg-4 col-md-6 col-sm-8 buypack">
+    <section class="block mbg4x">
+    <div class="block__body tac">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-5.svg" width="104" height="104" alt="" class="buypack-badge" />
+    <h3 class="mbgs">Titanium Pro</h3>
+    <p class="fs">€3,999</p>
+    <ul class="tal ul--buypack">
+    <li> Education package from mygrithub.com <strong>Value €3,999</strong></li>
+    <li>Crowd1 Rewards <strong>3500 pc</strong> </li>
+    <li> Streamline up to <strong>level 20</strong></li>
+    <li> Matching bonus up to <strong>level 5</strong></li>
+    </ul>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpackage" data-buypack-id="5" data-upgradeto-id="5" data-buypack-title="Titanium Pro" data-buypack-price="3999.00" data-buypack-price-pretty="€3,999" data-buypack-badge="https://static.crowd1.com/static/assets/images/icons-badges/packages/package-5.svg">Select</button>
+    </div>
+    </section>
+    </div> </div>
+    </div>
+    
+    
+    <div class="page-header page-header--radial-bg fdc mbg2x selectedPackageCont d-none" id="selectedPackageCont">
+    <div class="page-header__content">
+    <h2 class="page__title tac margin--none pb4x pt2x">Selected payment method</h2>
+    </div>
+    </div>
+    <div class="row selectedPackageCont d-none">
+    <div class="col-12">
+    <section class="block mbg4x">
+    <div class="block__body tac pt4x pbg2x">
+    <img src="" width="104" height="104" alt="" class="buypack-badge selectedPackageImage" />
+    <h3 class="mbgs" id="selectedPackageText"></h3>
+    <p class="fs selectedPackagePriceText strong"></p>
+    <div class="pb2x padding--horizontal">
+    Proceed by selecting method of payment below.<br>
+    </div>
+    <input type="hidden" name="package" value="0" id="selectedPackageId">
+    <input type="hidden" name="upgradeToPackageId" value="0" id="selectedUpgradeToPackageId">
+    <input type="hidden" name="packagePrice" value="0" id="selectedPackagePrice">
+    <input type="hidden" name="ewallet" id="ewalletvalue" value="0.00">
+    </div>
+    </section>
+    </div>
+    </div>
+    <div class="row selectedPackageCont d-none">
+    <div class="col-sm-4 paybox payway" id="payway_bitcoin">
+    <section class="block mbg4x">
+    <div class="block__body tac pt2x pbg2x">
+    <div class="tac padding-vertical2x">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/btc-payment.svg" class="payment-symbol mbg">
+    <h3 class="mbgs">Bitcoin</h3>
+    <hr>
+    <div class="pb2x padding--horizontal">
+    Pay or upgrade your package using Bitcoin.
+    </div>
+    </div>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn" href="/buypack/bitcoinpay">Pay</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-sm-4 paybox payway" id="payway_etherum" data-payway="etherumpay">
+    <section class="block mbg4x">
+    <div class="block__body tac pt2x pbg2x">
+    <div class="tac padding-vertical2x">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/ethereum-payment.svg" class="payment-symbol mbg">
+    <h3 class="mbgs">Ethereum</h3>
+    <hr>
+    <div class="pb2x padding--horizontal">
+    Pay or upgrade your package using Ethereum.
+    </div>
+    </div>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpayway" value="etherumpay">Pay</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-sm-4 paybox payway" id="payway_gift" data-payway="gift">
+    <section class="block mbg4x">
+    <div class="block__body tac pt2x pbg2x">
+    <div class="tac padding-vertical2x">
+    <img src="" class="payment-symbol selectedPackageImage mbg">
+    <h3 class="mbgs">Gift</h3>
+    <hr>
+    <div class="pb2x padding--horizontal">
+    Pay or upgrade your package using a gift code.</span>
+    </div>
+    </div>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpayway js-buy-buypack" value="gift" data-modal="#buypack">Proceed</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-sm-4 paybox payway" id="payway_account" data-payway="account">
+    <section class="block mbg4x">
+    <div class="block__body tac pt2x pbg2x">
+    <div class="tac padding-vertical2x">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/euro.svg" class="payment-symbol mbg">
+    <h3 class="mbgs">Account Balance</h3>
+    <hr>
+    <div class="pb2x padding--horizontal">
+    Use your account balance to pay or upgrade your selected package.<br>Your current Account balance is: <span class="accountbalance">...</span>
+    </div>
+    </div>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpayway" value="account">Pay</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-sm-4 paybox " id="payway_novapago" data-payway="novapago">
+    <section class="block mbg4x">
+    <div class="block__body tac pt2x pbg2x">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/card-payment.svg" class="payment-symbol mbg">
+    <h3 class="mbgs">Novapago</h3>
+    <hr>
+    <div class="pb2x padding--horizontal">
+    Pay or upgrade your package easily with Novapago to get started right away.
+    </div>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpayway" value="novapago">Pay</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-sm-4 paybox payway" id="payway_wirepay" data-payway="wirepay">
+    <section class="block mbg4x">
+    <div class="block__body tac pt2x pbg2x">
+    <div class="tac padding-vertical2x">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/bank-transfer.svg" class="payment-symbol mbg">
+    <h3 class="mbgs">Bank Transfer</h3>
+    <hr>
+    <div class="pb2x padding--horizontal">
+    Pay or upgrade your package using bank transfer.
+    </div>
+    </div>
+    </div>
+    <div class="block__footer padding--vertical2x">
+    <button type="submit" class="btn selectpayway" value="wirepay">Pay</button>
+    </div>
+    </section>
+    </div>
+    <div class="col-12">
+    <a href="user/buypack" class="btn">Select another Package</a>
+    </div>
+    </div>
+    <div class="d-none" id="payway_wirepay_cont">
+    <section class="pp-tabs-content">
+    <div id="pp-tab1" class="tab-content">
+    <div class="row">
+    <div class="col-12 col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+    <div class="block mbg3x">
+    <div class="block__body block--padding">
+    <div class="padding--vertical tac">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/bank-transfer.svg" width="96" height="96" class="mbg2x" alt="">
+    <p class="mbgs"><strong>Bank transfer</strong></p>
+    </div>
+    <div class="padding--vertical tac">
+    <div class="form-group">
+    <label for="wireeurope">Are you transferring money from a European country?</label><br>
+    <select id="wiretoeurope" name="wiretoeurope" class="form-control">
+    <option value="-1">Please select</option>
+    <option value="1">Yes</option>
+    <option value="0">No</option>
+    </select>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="block mbg3x transfer-choice insidesepa">
+    <a href="#" class="transfer-choice__btn transfer-choice__btn--europe" data-modal="#wire_transfer_europe" id="link-wire_transfer_eu">
+    <span>Transfer from <span class="highlight--blue"> Europe </span></span>
+    </a>
+    </div>
+    <div class="block mbg3x transfer-choice outsidesepa">
+    <a href="#" class="transfer-choice__btn transfer-choice__btn--world" id="link-wire_transfer_world">
+    <span>Transfer from outside of Europe<br> <span class="highlight--blue"> is not possible</span><br>Use Bitcoin or VISA</span>
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    </div>
+    <div class="d-none" id="price_0">0</div><div class="d-none" id="price_1">99</div><div class="d-none" id="price_2">299</div><div class="d-none" id="price_3">799</div><div class="d-none" id="price_4">2499</div><div class="d-none" id="price_5">3999</div><div class="d-none" id="price_12">200</div><div class="d-none" id="price_13">700</div><div class="d-none" id="price_14">2400</div><div class="d-none" id="price_15">3900</div><div class="d-none" id="price_23">500</div><div class="d-none" id="price_24">2200</div><div class="d-none" id="price_25">3700</div><div class="d-none" id="price_34">1700</div><div class="d-none" id="price_35">3200</div><div class="d-none" id="price_45">1500</div><div class="d-none" id="price_46">500</div><div class="d-none" id="price_47">500</div><div class="d-none" id="price_48">500</div><div class="d-none" id="price_49">500</div><div class="d-none" id="price_90101">99</div><div class="d-none" id="price_90102">299</div><div class="d-none" id="price_90103">799</div><div class="d-none" id="price_90104">2499</div><div class="d-none" id="price_90105">3999</div><div class="d-none" id="price_90112">200</div><div class="d-none" id="price_90113">700</div><div class="d-none" id="price_90114">2400</div><div class="d-none" id="price_90115">3900</div><div class="d-none" id="price_90123">500</div><div class="d-none" id="price_90124">2200</div><div class="d-none" id="price_90125">3700</div><div class="d-none" id="price_90134">1700</div><div class="d-none" id="price_90135">3200</div><div class="d-none" id="price_90145">1500</div><div class="d-none" id="price_90146">500</div><div class="d-none" id="price_90147">500</div><div class="d-none" id="price_90148">500</div><div class="d-none" id="price_90149">500</div><div class="d-none" id="price_90501">470.25</div><div class="d-none" id="price_90502">1420.25</div><div class="d-none" id="price_90503">3795.25</div><div class="d-none" id="price_90504">11870.25</div><div class="d-none" id="price_90505">18995.25</div><div class="d-none" id="price_91001">891</div><div class="d-none" id="price_91002">2691</div><div class="d-none" id="price_91003">7191</div><div class="d-none" id="price_91004">22491</div><div class="d-none" id="price_91005">35991</div><div class="d-none" id="price_1000001">0</div><div class="d-none" id="price_3000001">708</div><div class="d-none" id="price_4000001">49.99</div><div class="d-none" id="price_4000002">159.99</div><div class="d-none" id="price_5000001">0</div><span class="d-none" id="pack1">White</span>
+    <span class="d-none" id="packimg1"></span>
+    <span class="d-none" id="pack2">Black</span>
+    <span class="d-none" id="packimg2"></span>
+    <span class="d-none" id="pack3">Gold</span>
+    <span class="d-none" id="packimg3"></span>
+    <span class="d-none" id="pack4">Titanium</span>
+    <span class="d-none" id="packimg4"></span>
+    <span class="d-none" id="pack5">Titanium Pro</span>
+    <span class="d-none" id="packimg5"></span>
+    </div>
+    </div>
+    <div class="modal-wrapper" id="buypack">
+    <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal modal--thin">
+    <div class="modal__inner">
+    <div class="modal__body">
+    <form action="#" method="post" id="buypackagegiftform">
+    <img src="" width="96" height="96" alt="" class="modal-badge js-buypack-badge selectedPackageImage" />
+    <h3 class="tac margin--none js-buypack-title"></h3>
+    <p>
+    <br>
+    You can only use a gift code that matches the package cost.
+    </p>
+    
+    <input type="hidden" name="buypack_id" class="buypack_id">
+    <input type="hidden" name="price" class="price">
+    <div class="form-group">
+    <div class="form-group--animate-label">
+    <label for="giftcode">Gift code</label><br>
+    <div class="alert alert--error" id="gifterror"></div>
+    <input type="text" name="giftcode" id="giftcode" placeholder="Enter code" class="form-control giftcodeinput" />
+    <div class="alert alert--success" id="giftstatus">
+    </div>
+    </div>
+    <hr>
+    <div class="tac">
+    <button type="submit" class="btn" class="btn" id="submitgiftcode" disabled="true">Submit gift code</button>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal-wrapper" id="wire_transfer_europe">
+    <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal">
+    <div class="modal__inner ">
+    <div class="modal__body">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/bank-transfer.svg" width="96" height="96" alt="" class="modal-badge" />
+    <h3 class="tac">Bank Transfer Details</h3>
+    <p class="tac ttu mbg2x highlight--grey bold">For transfers within <span class="highlight--blue">Europe (SEPA)</span></p>
+    <hr>
+    <div class="modal__footer">
+    <p>Make sure to write your Crowd1 username <b>{{user.username}}</b> as reference.</p>
+    <p>Failure to enter the information shown accurately, may result in your transaction being rejected by the bank. The bank will return the transaction back to you minus any bankfees. It is important that you accurately enter the information requested</p>
+    <p>Please allow 2-5 business days for your transaction to be received and verified.</p>
+    </div>
+    <p class="margin--none">Beneficiary Name</p>
+    <p><strong>Impact Crowd Technology sl</strong></p>
+    <p class="margin--none">Company Adress</p>
+    <p><strong>
+    Calle Velazquez 86, Portal A <br>
+    1 derecha 28006 <br>
+    Madrid, Spain
+    </strong>
+    </p>
+    <p class="margin--none">IBAN (SEPA)</p>
+    <p>
+    <strong class="wspw">MT88PHPY270070PHOENIX0009389421</strong>
+    </p>
+    <p class="margin--none">BIC</p>
+    <p>
+    <strong>PHPYMTM1XXX</strong>
+    </p>
+    <p class="margin--none">Bank name</p>
+    <p>
+    <strong>Phoenix Payments Ltd</strong>
+    </p>
+    <p class="margin--none">Bank Address</p>
+    <p><strong>
+    5th Floor, Valletta Buildings, South Street<br>
+    VLT1103<br>
+    Valletta, Malta
+    </strong>
+    </p>
+    <p class="margin--none">Reference</p>
+    <p>
+    <strong>agentt2g</strong>
+    </p>
+    <p class="margin--none">Instructions</p>
+    <p>
+    <strong>Choose the option to Pay All Bank Wire Transfer Costs, so that the correct amount is received at the bank and is credited to you</strong>
+    </p>
+    
+    <div class="wireamount"></div>
+    <div class="row">
+    <div class="col-md-3"><p><b>Currency</b></p></div>
+    <div class="col-md-6">
+    <p>EURO</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal-wrapper" id="wire_transfer_world">
+     <div class="modal-wrapper__inner">
+    <a href="javascript:void(0);" class="modal-bg-close"></a>
+    <div class="modal">
+    <div class="modal__inner">
+    <div class="modal__body">
+    <img src="https://static.crowd1.com/static/assets/images/icons-badges/bank-transfer.svg" width="96" height="96" alt="" class="modal-badge" />
+    <h3 class="tac">Bank Transfer Details</h3>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div></div>
+@endsection
