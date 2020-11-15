@@ -113,11 +113,11 @@ app.get('/bonus/matching', auth, matchingbonusController)
 app.get('/bonus/residualincome', auth, residualincomeController)
 app.get('/bonus/fearofloss', auth, fearoflossController)
 app.get('/bonus/levels', auth, levelsController)
-app.get('/buypack/bitcoinpay1', bitcoinpay1Controller)
-app.get('/buypack/ethereumpay', ethereumpayController)
-app.get('/user/downline', downlineController)
+app.get('/buypack/bitcoinpay1', auth, bitcoinpay1Controller)
+app.get('/buypack/ethereumpay', auth, ethereumpayController)
+app.get('/user/downline', auth, downlineController)
 
-
+app.use((req, res) => res.render('not-found'))
 
 
 app.listen(4000, () => {
